@@ -1,0 +1,84 @@
+/* Estilos generales */
+:root {
+  --primary-color: #4bb5c1;
+  --secondary-color: #ffffff;
+  --accent-color: #6c757d;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  transition: top 0.6s;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+/* Secciones */
+.hero-section,
+.services-section,
+.contact-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 100px 0;
+}
+
+.services-section {
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+}
+
+.contact-section {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 50px 0;
+}
+
+/* Cards de servicios */
+.service-card {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Botón de WhatsApp */
+.btn-success {
+  background-color: #25d366;
+  border: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-section,
+  .services-section,
+  .contact-section {
+    padding: 20px;
+  }
+}
